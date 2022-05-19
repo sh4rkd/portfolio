@@ -1,0 +1,13 @@
+.text-hero{
+    z-index: 10000000;
+}
+
+video{
+    z-index:1;object-fit: cover; 
+    object-position: 50% 50%;
+}
+
+.navbar{
+    background: rgb(175,234,213);
+    background: linear-gradient(94deg, rgba(175,234,213,1) 0%, rgba(56,124,100,1) 28%, rgba(103,230,185,1) 100%);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio - Fred</title>
+</head>
+    <body>
+		<!-- <header> -->
+            <header class="navbar navbar-light navbar-expand-lg sticky-top justify-content-between px-4">
+                <h1>Fred's Portfolio</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Networks</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <!-- </header> -->
+        <main>
+            <div class="loader"></div>
+            <div class="position-relative overflow-hidden">
+                <div class="d-flex min-vh-100" lc-helper="video-bg">
+                    <video class="position-absolute w-100 min-vh-100" autoplay="" preload="" muted="" loop="" playsinline="">
+                        <source src="media/Code_flythough_loop_01_Videvo.mov" type="video/mp4">
+                    </video>
+                    <div class="text-hero align-self-center text-center text-light col-md-8 offset-md-2">
+                        <div class="lc-block mb-4">
+                            <div editable="rich">
+                                <h2 class="typewriter">I'm a 
+                                    <span data-text="web developer., tutor., programmer., gamer., data scientist"></span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="lc-block">
+                            <div editable="rich">
+                                <p class="lead">C, C++, C#, Java, Python, Javascript, TypeScript</p>
+                                <p class="lead">CSS, Sass, Tailwind, Bootstrap, ReactJS</p>
+                            </div>
+                        </div>
+                        <div class="lc-block">
+                            <svg onclick="this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth'  });" width="4em" height="4em" viewBox="0 0 16 16" lc-helper="svg-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
+                            </svg>
+                            <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Fred 2022</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="js/project.js"></script>
+    </body>
+</html>
