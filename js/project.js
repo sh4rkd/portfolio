@@ -1,12 +1,12 @@
 let span = document.querySelector(".typewriter span");
-let textArr = span.getAttribute("data-text").split(", "); 
-let maxTextIndex = textArr.length; 
+let lettersQuantity = span.getAttribute("data-text").split(", "); 
+let maxLetterSize = lettersQuantity.length; 
 
-let sPerChar = 0.15; 
-let sBetweenWord = 1.5;
+let secondsPerCharacter = 0.15; 
+let secondsBetweenWord = 1.5;
 let textIndex = 0; 
 
-typing(textIndex, textArr[textIndex]); 
+typing(textIndex, lettersQuantity[textIndex]); 
 
 function typing(textIndex, text) {
     let charIndex = 0; 
@@ -16,12 +16,12 @@ function typing(textIndex, text) {
         span.innerHTML += text[charIndex]; 
         if (charIndex == maxCharIndex) {
             clearInterval(typeInterval);
-            setTimeout(function() { deleting(textIndex, text) }, sBetweenWord * 1000); 
+            setTimeout(function() { deleting(textIndex, text) }, secondsBetweenWord * 1000); 
             
         } else {
             charIndex += 1; 
         }
-    }, sPerChar * 1000); 
+    }, secondsPerCharacter * 1000); 
 }
 
 const deleting = (textIndex, text) => {
@@ -32,10 +32,11 @@ const deleting = (textIndex, text) => {
         span.innerHTML = text.substr(0, charIndex); 
         if (charIndex == minCharIndex) {
             clearInterval(typeInterval);
-            textIndex + 1 == maxTextIndex ? textIndex = 0 : textIndex += 1; 
-            setTimeout(function() { typing(textIndex, textArr[textIndex]) }, sBetweenWord * 1000); 
+            textIndex + 1 == maxLetterSize ? textIndex = 0 : textIndex += 1; 
+            setTimeout(function() { typing(textIndex, lettersQuantity[textIndex]) }, secondsBetweenWord * 1000); 
         } else {
             charIndex -= 1; 
         }
-    }, sPerChar * 1000); 
+    }, secondsPerCharacter * 1000); 
 }
+
